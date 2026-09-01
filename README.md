@@ -1,5 +1,3 @@
-# Pan_cancer_nucleosome_atlas
-
 # Pan-cancer Nucleosome Atlas Based on ATAC-seq
 
 This repository contains scripts used to construct and analyze a pan-cancer nucleosome atlas based on ATAC-seq data. The analysis includes sequencing data preprocessing, nucleosome occupancy calculation, pan-cancer nucleosome atlas construction, nucleosome positioning quality control, motif enrichment analysis, cancer subtype analysis, differential nucleosome analysis, and cfDNA-based cancer detection and classification.
