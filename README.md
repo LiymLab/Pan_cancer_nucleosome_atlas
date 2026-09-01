@@ -25,7 +25,7 @@ This directory contains scripts for downstream analyses of the pan-cancer nucleo
 
 This directory contains scripts used to construct the pan-cancer nucleosome atlas and identify cancer-associated nucleosome features.
 
-![Supplementary flowchart](./Sup_Flowchart.png)
+![Pan cancer nucleosome atlas construction flowchart](./DataAnalysis/Pan_cancer_nucleosome_atlas_construction/Sup_Flowchart.png)
 
 * `sample_nucleosome_set.R`:
   This script is used to generate sample-level nucleosome sets for individual samples.
