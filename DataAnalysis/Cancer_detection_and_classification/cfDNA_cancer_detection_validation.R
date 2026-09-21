@@ -278,35 +278,13 @@ val_mat_sel <- val_mat[
   drop = FALSE
 ]
 
-# ============================================================
-# 9. Z-score normalization using training data
-# ============================================================
-mu <- rowMeans(train_mat_sel)
 
-sigma <- apply(
-  train_mat_sel,
-  1,
-  sd
-)
 
-sigma[sigma == 0] <- 1
+train_scaled <- train_mat_sel
 
-scale_with_train <- function(mat, mu, sigma) {
-  mat <- sweep(mat, 1, mu, "-")
-  sweep(mat, 1, sigma, "/")
-}
 
-train_scaled <- scale_with_train(
-  train_mat_sel,
-  mu,
-  sigma
-)
+val_scaled <- val_mat_sel
 
-val_scaled <- scale_with_train(
-  val_mat_sel,
-  mu,
-  sigma
-)
 
 # ============================================================
 # 10. Train linear SVM
